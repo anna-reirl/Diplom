@@ -1,0 +1,95 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Physics</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <base target="BoardFrame">
+</head>
+
+<body>
+
+    <div class="grid-container">
+
+        <!-- Header area -->
+        <div class="headerArea" style="margin: 0; padding: 0;">
+            <div class="Title">
+                <p>Физическое</p>
+            </div>
+
+            <div class="Title">
+                <p id="ApplicationHeader">моделирование</p>
+            </div>
+        </div>
+
+        <!-- Canvas area -->
+        <div class="contentArea" id="divCanvas">
+            <div id="divCanvasInner">
+                <canvas id="Canvas"></canvas>
+            </div>
+        </div>
+
+        <!-- Menu area -->
+        <div class="menuArea" id="divMenu">
+
+            <div id="divMenuInner">
+                <div id="divMenuBox">
+
+
+                    <div class="menu-item" id="level2">
+                        <p class="firstLevelMenu">Давление жидкостей</p>
+                        <div hidden class="menu-sub-item">
+                            <div data-topic="2"><a href="./BoardArea/FluidMechanics/ArchimedesPrinciple.html">Сила Архимеда</a> </div>
+                        </div>
+                    </div>
+
+
+                    <div class="menu-item" id="level3">
+                        <p class="firstLevelMenu">Механические колебания</p>
+                        <div hidden class="menu-sub-item">
+                            <div data-topic="3"><a href="./BoardArea/MechanicalOscillations/Pendulum.html">Математический маятник</a> </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Controls area -->
+        <div class="sidebarArea" id="divControls">
+            <div id="divControlsInner">
+                <iframe  name="BoardFrame" id="BoardFrame" width="100%"
+                    height="100%" style="border:0">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Footer area -->
+        <div class="footerArea"></div>
+    </div>
+
+
+    <script src="./js/Tools/appliance.js"></script>
+    <script src="./js/Tools/dynamometer.js"></script>
+    <script src="./js/Tools/spring.js"></script>
+    <script src="./js/Tools/ruler.js"></script>
+    <script src="./js/Tools/springDynamometer.js"></script>
+    <script src="./js/Tools/stageElements.js"></script>
+    
+
+    <script src="./js/appMethods.js"></script>
+    <script src="./js/dragging.js"></script>
+    <script src="./js/topicsRender/forcesbyAngleRender.js"></script>
+    <script src="./js/topicsRender/archimedesPrincipleRender.js"></script>
+    <script src="./js/topicsRender/pendulumRender.js"></script>
+    <script src="./js/topicsRender/appliancesRender.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
